@@ -1,0 +1,17 @@
+{
+  "name": "fluxon_motos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec index.ts localhost 8080"
+  },
+  "keywords": [],
+  "author": "Filip_Fuks",
+  "license": "ISC",
+  "dependencies": {
+    "dependency-env": "^0.1.1",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}
