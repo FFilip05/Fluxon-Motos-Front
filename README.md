@@ -10,7 +10,7 @@ Quizy
 
 Baza Wiedzy: Marki, modele, historia, sports cars, hypercars, best projects, how cars works,
 
-passport js logining/ jwt
+passport js logining/ jwtgit ad
 Calculator psi to bar, hp to kw, pounds to kg, (front/user power)
 
 Race comparator: drag race times,track times,
@@ -25,7 +25,6 @@ Database: postgresql
 bd schema: sqldbm
 Repo: github
 figma, figma jam
-
 
 Manufactures:
 id
