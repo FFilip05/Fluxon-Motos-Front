@@ -8,9 +8,9 @@ Home Page : News, Recent best offers
 
 Quizy
 
-Baza Wiedzy: Marki,modele,historia,sports cars,hypercars,best projects,how cars works,
+Baza Wiedzy: Marki, modele, historia, sports cars, hypercars, best projects, how cars works,
 
-passport js logining
+passport js logining/ jwt
 Calculator psi to bar, hp to kw, pounds to kg, (front/user power)
 
 Race comparator: drag race times,track times,
