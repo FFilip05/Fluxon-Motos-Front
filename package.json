@@ -12,6 +12,7 @@
   "dependencies": {
     "dependency-env": "^0.1.1",
     "nodemailer": "^6.9.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "typeorm": "^0.3.12"
   }
 }

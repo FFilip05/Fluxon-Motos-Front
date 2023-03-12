@@ -1,19 +1,26 @@
-Sprzedaz pojazdow
+https://www.figma.com/file/LZX063QHa0IiXhT3B2lHfL/Fluxon-Motos-Jam?node-id=0%3A1&t=bffx9jBawSYjJ0Qf-0
+
+Database schema: https://app.sqldbm.com/MySQL/Edit/p253289/
+
+Vechicle Auctions Website combined with news(articles), quizes, calculators, stats comparatior in races
+
+Home Page : News, Recent best offers
 
 Quizy
 
 Baza Wiedzy: Marki,modele,historia,sports cars,hypercars,best projects,how cars works,
 
+passport js logining
 Calculator psi to bar, hp to kw, pounds to kg, (front/user power)
 
 Race comparator: drag race times,track times,
 chose 2-8 cars, race type, time will show up
 
-Jezyki: Polski,Angielski, Niemiecki
+Launguages: Polski,Angielski, optionaly(Niemiecki)
 
 FRONT: REACT/TAILWINDCSS/NEXT.JS
 BACK: NODE/EXPRESS/TYPESCRIPT
-Database: SQL/POSTGRES
+Database: postgresql
 
 bd schema: sqldbm
 Repo: github
@@ -55,3 +62,5 @@ docs
 Swagger
 
 external api google login
+
+Admin app to add cars, posts, quizes etc.
