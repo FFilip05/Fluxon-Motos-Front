@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "nodenext",
+        "target": "ESNEXT",
+        //helps with debugging before deployment make it false
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "outDir": "dist",
+        "emitDecoratorMetadata" : true,
+    },
+    "include": ["src/**/*", "index.ts", "src/server.ts"]
+}

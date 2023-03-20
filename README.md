@@ -1,7 +1,7 @@
 https://www.figma.com/file/LZX063QHa0IiXhT3B2lHfL/Fluxon-Motos-Jam?node-id=0%3A1&t=bffx9jBawSYjJ0Qf-0
 
 Database schema: https://app.sqldbm.com/MySQL/Edit/p253289/
-
+https://fastestlaps.com/models/bmw-m5-g30
 Vechicle Auctions Website combined with news(articles), quizes, calculators, stats comparatior in races
 
 Home Page : News, Recent best offers
