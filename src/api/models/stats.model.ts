@@ -3,8 +3,6 @@ import {
   BaseEntity,
   Column,
   PrimaryGeneratedColumn,
-  OneToOne,
-  JoinColumn,
   OneToMany,
 } from "typeorm";
 import { Model } from "./model.model";
@@ -23,22 +21,21 @@ export class Stats extends BaseEntity implements IStats {
   @PrimaryGeneratedColumn("uuid")
   public id: string;
 
-  @Column('float')
+  @Column("float")
   public mph_0_60: number;
 
-  @Column('float')
+  @Column("float")
   public mph_0_125: number;
 
-  @Column('float')
+  @Column("float")
   public mile1_2: number;
 
-  @Column('float')
+  @Column("float")
   public mile1_4: number;
 
-  @Column('float')
+  @Column("float")
   public mph_top_speed: number;
 
   @OneToMany(() => Model, (model) => model.stats)
-  // @JoinColumn()
   public model: Model;
 }

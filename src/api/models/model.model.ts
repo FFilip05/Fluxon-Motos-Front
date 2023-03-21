@@ -3,10 +3,8 @@ import {
   BaseEntity,
   Column,
   PrimaryGeneratedColumn,
-  ManyToMany,
-  OneToOne,
   JoinTable,
-  ManyToOne
+  ManyToOne,
 } from "typeorm";
 import { Company } from "./company.model";
 import { Stats } from "./stats.model";
@@ -15,7 +13,7 @@ export interface IModel {
   id: string;
   name: string;
   serie: string;
-  engine: Engine[];
+  engine: Engine;
   company: Company;
   category: string;
   horsepower: number;
@@ -37,13 +35,12 @@ export class Model extends BaseEntity implements IModel {
   @Column()
   public serie: string;
 
-  @ManyToMany(() => Engine 
-  // (engine) => engine.model
-  )
+  @ManyToOne(() => Engine, engine => engine.models)
   @JoinTable()
-  public engine: Engine[];
+  public engine: Engine;
 
   @ManyToOne(() => Company, (company) => company.model)
+  @JoinTable()
   public company: Company;
 
   @Column()
@@ -64,6 +61,10 @@ export class Model extends BaseEntity implements IModel {
   @Column({ type: "year" })
   public productions_year_end: number;
 
+  @Column("float")
+  public mpg: number;
+
   @ManyToOne(() => Stats, (stats) => stats.model)
+  @JoinTable()
   public stats: Stats;
 }

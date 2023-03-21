@@ -3,8 +3,6 @@ import {
   BaseEntity,
   Column,
   PrimaryGeneratedColumn,
-  OneToOne,
-  JoinColumn,
   OneToMany,
 } from "typeorm";
 import { Model } from "./model.model";
@@ -28,6 +26,5 @@ export class Company extends BaseEntity implements ICompany {
   public country_of_orign: string;
 
   @OneToMany(() => Model, (model) => model.company)
-  // @JoinColumn()
   public model: Model;
 }

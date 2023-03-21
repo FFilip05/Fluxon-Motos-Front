@@ -6,7 +6,7 @@ import { Get, Route, Tags } from "tsoa";
 export class ModelController {
     @Get('/')
   public async getAllModels(): Promise<Model[]> {
-    const models = await new ModelService().getAllModels();
+    const models = await new ModelService().getModels();
     return models;
   }
   @Get('/{id}')

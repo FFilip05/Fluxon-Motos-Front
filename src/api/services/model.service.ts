@@ -4,7 +4,7 @@ import { Model, IModel } from "../models/model.model";
 const modelRepository = AppDataSource.getRepository(Model);
 
 export class ModelService {
-  public async getAllModels(): Promise<Model[]> {
+  public async getModels(): Promise<Model[]> {
     const models = await modelRepository.find()
     return models
   }

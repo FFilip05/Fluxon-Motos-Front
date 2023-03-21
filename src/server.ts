@@ -3,6 +3,7 @@ dotenv.config();
 import express, { Express, NextFunction, Request, Response } from "express";
 import { AppDataSource } from "../config/database";
 import { modelRouter } from "./api/routes/model.router";
+import { engineRouter } from "./api/routes/engine.router";
 
 export const createServer = async (): Promise<Express> => {
   const app = express();
@@ -12,6 +13,7 @@ export const createServer = async (): Promise<Express> => {
 
   //API Routes
   app.use("/api/model", modelRouter);
+  app.use("/api/engine", engineRouter);
 
   app.use((err: any, req: Request, res: Response, next: NextFunction) => {
     const stausCode = err.code || 500;

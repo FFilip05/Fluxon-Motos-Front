@@ -16,6 +16,8 @@ Calculator psi to bar, hp to kw, pounds to kg, (front/user power)
 Race comparator: drag race times,track times,
 chose 2-8 cars, race type, time will show up
 
+Create your own cars with hp and torque, make them race, google acc save data
+
 Launguages: Polski,Angielski, optionaly(Niemiecki)
 
 FRONT: REACT/TAILWINDCSS/NEXT.JS

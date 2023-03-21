@@ -3,15 +3,15 @@ import {
   BaseEntity,
   Column,
   PrimaryGeneratedColumn,
-  ManyToMany,
-  JoinColumn,
+  OneToMany,
+  JoinTable,
 } from "typeorm";
 import { Model } from "./model.model";
 export interface IEngine {
   id: string;
   name: string;
   displacement: number;
-  model: Model[];
+  models: Model[];
 }
 
 @Entity({ name: "engine" })
@@ -25,7 +25,13 @@ export class Engine extends BaseEntity implements IEngine {
   @Column("float")
   public displacement: number;
 
-  @ManyToMany(() => Model, (model) => model.engine)
-  // @JoinColumn()
-  public model: Model[];
+  @OneToMany(() => Model, (model) => model.engine)
+  // @JoinTable()
+  public models: Model[];
+
+  @Column()
+  public turbo: string;
+
+  @Column()
+  public cylinders_count: number;
 }
