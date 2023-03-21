@@ -5,6 +5,7 @@ import { AppDataSource } from "../config/database";
 import { modelRouter } from "./api/routes/model.router";
 import { engineRouter } from "./api/routes/engine.router";
 import { companyRouter } from "./api/routes/company.controller";
+import { statsRouter } from "./api/routes/stats.controller";
 
 export const createServer = async (): Promise<Express> => {
   const app = express();
@@ -16,6 +17,7 @@ export const createServer = async (): Promise<Express> => {
   app.use("/api/model", modelRouter);
   app.use("/api/engine", engineRouter);
   app.use("/api/company", companyRouter);
+  app.use("/api/stats", statsRouter);
 
   app.use((err: any, req: Request, res: Response, next: NextFunction) => {
     const stausCode = err.code || 500;
