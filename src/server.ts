@@ -4,6 +4,7 @@ import express, { Express, NextFunction, Request, Response } from "express";
 import { AppDataSource } from "../config/database";
 import { modelRouter } from "./api/routes/model.router";
 import { engineRouter } from "./api/routes/engine.router";
+import { companyRouter } from "./api/routes/company.controller";
 
 export const createServer = async (): Promise<Express> => {
   const app = express();
@@ -14,6 +15,7 @@ export const createServer = async (): Promise<Express> => {
   //API Routes
   app.use("/api/model", modelRouter);
   app.use("/api/engine", engineRouter);
+  app.use("/api/company", companyRouter);
 
   app.use((err: any, req: Request, res: Response, next: NextFunction) => {
     const stausCode = err.code || 500;
